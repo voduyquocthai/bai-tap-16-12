@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 3: Tìm vị trí các số nhỏ nhất trong mảng -->
+    <script>
+        let arr = [1,2,4,5,6,1,1,8,9,10,1,12]
+        let min = arr[0]
+        let indexarr= []
+        for (i=0; i < arr.length; i++){
+            if (min>=arr[i]){
+                min = arr[i];
+                indexarr.push(i);
+                
+            }
+        }
+        alert('Vị trí của các các số bé nhất: ' + indexarr )
+    </script>
+</body>
+</html>
